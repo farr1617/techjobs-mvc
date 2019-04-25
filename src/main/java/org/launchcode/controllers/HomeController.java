@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.HashMap;
 
 /**
+
  * Created by LaunchCode
+
  */
+
 @Controller
 public class HomeController {
 
@@ -22,6 +25,9 @@ public class HomeController {
         model.addAttribute("actions", actionChoices);
 
         return "index";
+
     }
+
+
 
 }

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+
 <html xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head">
+
 </head>
 <body>
 
@@ -17,10 +19,9 @@
                 <td><a th:href="@{/list/jobs(column=${column},value=${item})}" th:text="${item}"></a></td>
             </tr>
         </table>
-
     </div>
 
-</div>
 
+</div>
 </body>
 </html>

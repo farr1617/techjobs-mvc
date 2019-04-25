@@ -14,6 +14,7 @@
         <h2>Search by:</h2>
 
         <p>
+
             <span th:each="column : ${columns}">
                 <input
                         type="radio"
@@ -36,7 +37,13 @@
 
     <hr />
 
-    <!-- TODO #2 - Loop over jobs map to display all job fields -->
+
+        <table th:each="job : ${jobs}">
+            <tr th:each="newJob : ${job}">
+                <td th:text="${newJob.key}"></td>
+                <td th:text="${newJob.value}"></td>
+            </tr>
+        </table>
 
 </div>
 
